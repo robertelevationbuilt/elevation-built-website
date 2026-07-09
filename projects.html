@@ -3,87 +3,198 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects — Adelaide &amp; SA Commercial Construction | Elevation Built</title>
-  <meta name="description" content="Elevation Built's project portfolio across commercial fitout, healthcare, education and retail construction in South Australia. Active across Adelaide and regional SA." />
+  <title>Projects | Elevation Built | Commercial Construction Adelaide</title>
+  <meta name="description" content="Elevation Built — active across commercial fitout, healthcare, education and retail construction in South Australia. Tier 1 builder partners." />
+  <link rel="canonical" href="https://elevationbuilt.com.au/projects.html" />
+  <meta property="og:title" content="Projects | Elevation Built Adelaide" />
+  <meta property="og:description" content="Active across commercial fitout, healthcare, education and retail in South Australia." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+<!-- ===== NAV ===== -->
 <nav class="nav" id="nav">
-  <a href="./" class="nav-logo">
-    <img src="images/eb-logo.png" alt="Elevation Built" style="height:44px;width:auto;display:block;">
-  </a>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="./">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="projects.html" class="active">Projects</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
-  </ul>
-  <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="./" class="nav-logo">
+        <img src="images/eb-logo.png" alt="Elevation Built" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="./">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
 </nav>
 
-<div class="page-hero">
-  <div class="page-hero-bg" style="background-image: url('images/hero.png')"></div>
-  <div class="page-hero-content">
-    <div class="breadcrumb"><a href="./">Home</a> <span>/</span> <span>Projects</span></div>
-    <span class="label">Our Work</span>
-    <h1>Our Projects — Adelaide &amp; SA</h1>
-    <p>Active across commercial fitout, healthcare, education and retail construction in South Australia — partnering with the state's leading Tier 1 builders.</p>
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="./" onclick="closeMobileMenu()">Home</a>
+  <a href="services.html" onclick="closeMobileMenu()">Services</a>
+  <a href="projects.html" onclick="closeMobileMenu()">Projects</a>
+  <a href="about.html" onclick="closeMobileMenu()">About</a>
+  <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+  <a href="contact.html" class="btn btn-primary" style="margin-top:8px;font-size:18px;" onclick="closeMobileMenu()">Get a Quote</a>
+</div>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero" style="background: var(--surface);">
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="label">Projects</span>
+      <h1>Our Work</h1>
+      <p>Active across commercial fitout, healthcare, education and retail in South Australia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS PLACEHOLDER ===== -->
+<section class="section" style="background: var(--bg);">
+  <div class="container">
+    <div class="projects-placeholder reveal">
+      <p>Project portfolio coming soon.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<div class="stats-strip">
+  <div class="container" style="padding:0;">
+    <div class="stats-grid">
+      <div class="stat-cell reveal">
+        <div class="stat-big"><em>6</em></div>
+        <div class="stat-lbl">Active Projects</div>
+      </div>
+      <div class="stat-cell reveal reveal-d1">
+        <div class="stat-big"><em>4</em></div>
+        <div class="stat-lbl">Trade Specialties</div>
+      </div>
+      <div class="stat-cell reveal reveal-d2">
+        <div class="stat-big"><em>100%</em></div>
+        <div class="stat-lbl">Tier 1 Builder Clients</div>
+      </div>
+      <div class="stat-cell reveal reveal-d3">
+        <div class="stat-big">SA</div>
+        <div class="stat-lbl">Based &amp; Operated</div>
+      </div>
+    </div>
   </div>
 </div>
 
-<section class="section">
-  <div class="section-header fade">
-    <span class="label-tag">Project Portfolio</span>
-    <h2 class="section-title">Built for South Australia's Best</h2>
-    <p class="section-sub">Every Elevation Built project is delivered through our systems: 4-week lookahead programmes, licensed site supervision, documented variations, and the accountability that Tier 1 builders in Adelaide and across SA expect from a specialist subcontractor.</p>
-  </div>
-  <div style="text-align:center; padding: 60px 20px;">
-    <p style="color:#888; font-size:1.1rem;">Project portfolio coming soon.</p>
-  </div>
-</section>
-
-<section class="section-sm">
-  <div class="stats-bar fade">
-    <div class="stat-item">
-      <div class="stat-num">6</div>
-      <div class="stat-lbl">Active Projects</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">4</div>
-      <div class="stat-lbl">Trade Specialties</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">100%</div>
-      <div class="stat-lbl">Tier 1 Builder Clients</div>
+<!-- ===== CTA ===== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-text">
+        <h2 class="cta-title">Ready to discuss<br>your next project?</h2>
+        <p class="cta-sub">Tendering, in design, or ready to start — we're ready to talk.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-white">
+          Get in Touch
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:0452378954" class="btn btn-outline" style="border-color:rgba(255,255,255,0.25); color:#fff;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12 19.79 19.79 0 011.23 3.43 2 2 0 013.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          0452 378 954
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section section-light">
-  <div class="cta-banner fade">
-    <div><h2>Ready to discuss your Adelaide project?</h2><p>Get in touch for a quote or to discuss your project requirements.</p></div>
-    <div class="cta-banner-actions"><a href="contact.html" class="btn btn-white">Get a Quote</a><a href="tel:0452378954" class="btn btn-outline-white">0452 378 954</a></div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <a href="./" class="nav-logo"><img src="images/eb-logo.png" alt="Elevation Built" style="height:44px;width:auto;display:block;"></a>
-      <p>Adelaide's commercial construction specialists — ceilings, partitions, carpentry, cladding and specialty battens for Tier 1 builders across South Australia.</p>
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/eb-logo.png" alt="Elevation Built" class="footer-logo" />
+        <p class="footer-tagline">Adelaide's specialist commercial subcontractor — ceilings, partitions, carpentry, cladding and batten systems for Tier 1 builders across South Australia.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="ceilings-partitions.html">Ceilings &amp; Partitions</a></li>
+          <li><a href="cladding.html">External Cladding</a></li>
+          <li><a href="carpentry.html">Bespoke Carpentry</a></li>
+          <li><a href="battens.html">Specialty Battens</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">All Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12 19.79 19.79 0 011.23 3.43 2 2 0 013.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <a href="tel:0452378954">0452 378 954</a>
+        </div>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:robert@elevationbuilt.com.au">robert@elevationbuilt.com.au</a>
+        </div>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>Adelaide, South Australia</p>
+        </div>
+      </div>
     </div>
-    <div class="footer-col"><h5>Services</h5><ul><li><a href="ceilings-partitions.html">Ceilings &amp; Partitions</a></li><li><a href="carpentry.html">Carpentry</a></li><li><a href="cladding.html">External Cladding</a></li><li><a href="battens.html">Specialty Battens</a></li></ul></div>
-    <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    <div class="footer-col"><h5>Contact</h5><ul><li><a href="tel:0452378954">0452 378 954</a></li><li><a href="mailto:robert@elevationbuilt.com.au">robert@elevationbuilt.com.au</a></li><li><a href="contact.html">Get a Quote</a></li></ul></div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Elevation Built Pty Ltd. All rights reserved.</p>
+      <span class="footer-abn">ABN 55 690 757 521 &nbsp;|&nbsp; Adelaide, SA</span>
+    </div>
   </div>
-  <div class="footer-bottom"><p>© 2026 Elevation Built Pty Ltd. All rights reserved.</p><span class="footer-abn">ABN 55 690 757 521 | Adelaide, SA</span></div>
 </footer>
 
-<script src="js/main.js"></script>
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+}, { passive: true });
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+let menuOpen = false;
+hamburger.addEventListener('click', () => {
+  menuOpen = !menuOpen;
+  mobileMenu.classList.toggle('open', menuOpen);
+  document.body.style.overflow = menuOpen ? 'hidden' : '';
+});
+function closeMobileMenu() {
+  menuOpen = false;
+  mobileMenu.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      revealObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => revealObserver.observe(el));
+</script>
 </body>
 </html>

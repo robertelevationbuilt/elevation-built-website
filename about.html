@@ -3,176 +3,240 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Elevation Built | Adelaide Commercial Construction</title>
-  <meta name="description" content="Elevation Built is an Adelaide-based commercial subcontractor delivering ceilings, partitions, carpentry, cladding and battens for Tier 1 builders across South Australia. Systems-driven. Accountable." />
+  <title>About Us | Elevation Built | Commercial Construction Adelaide</title>
+  <meta name="description" content="Elevation Built is Adelaide's licensed commercial subcontractor. Ceilings, partitions, carpentry, cladding and batten systems for Tier 1 builders across South Australia." />
+  <link rel="canonical" href="https://elevationbuilt.com.au/about.html" />
+  <meta property="og:title" content="About Elevation Built | Commercial Construction Adelaide" />
+  <meta property="og:description" content="Adelaide's specialist commercial subcontractor — built on systems, delivered on programme." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    .how-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 32px; }
-    .how-item { text-align: center; padding: 40px 28px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; }
-    .how-icon { width: 56px; height: 56px; background: var(--purple); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
-    .how-icon svg { width: 26px; height: 26px; stroke: #fff; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-    .how-item h3 { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 10px; }
-    .how-item p { font-size: 14.5px; color: rgba(255,255,255,0.6); line-height: 1.7; }
-    @media (max-width: 768px) { .how-grid { grid-template-columns: 1fr; } }
-  </style>
 </head>
 <body>
 
+<!-- ===== NAV ===== -->
 <nav class="nav" id="nav">
-  <a href="./" class="nav-logo">
-    <img src="images/eb-logo.png" alt="Elevation Built" style="height:44px;width:auto;display:block;">
-  </a>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="./">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="about.html" class="active">About</a></li>
-    <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
-  </ul>
-  <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="./" class="nav-logo">
+        <img src="images/eb-logo.png" alt="Elevation Built" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="./">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
 </nav>
 
-<div class="page-hero">
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="./" onclick="closeMobileMenu()">Home</a>
+  <a href="services.html" onclick="closeMobileMenu()">Services</a>
+  <a href="projects.html" onclick="closeMobileMenu()">Projects</a>
+  <a href="about.html" onclick="closeMobileMenu()">About</a>
+  <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+  <a href="contact.html" class="btn btn-primary" style="margin-top:8px;font-size:18px;" onclick="closeMobileMenu()">Get a Quote</a>
+</div>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
   <div class="page-hero-bg" style="background-image: url('images/hero.png')"></div>
-  <div class="page-hero-content">
-    <div class="breadcrumb"><a href="./">Home</a> <span>/</span> <span>About</span></div>
-    <span class="label">Who We Are</span>
-    <h1>About Elevation Built</h1>
-    <p>A systems-driven commercial subcontractor based in Adelaide SA — built on accountability, precision delivery and Tier 1 builder partnerships.</p>
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="label">About Us</span>
+      <h1>Adelaide's Commercial Construction Specialists</h1>
+      <p>A licensed commercial subcontractor delivering ceilings, partitions, carpentry, cladding and batten systems to the highest standard across South Australia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPANY STORY ===== -->
+<section class="section" style="background: var(--surface);">
+  <div class="container">
+    <div class="split-inner">
+      <div class="split-content">
+        <span class="label reveal">Our Story</span>
+        <h2 class="section-title reveal reveal-d1" style="margin: 20px 0 20px;">Built on Systems.<br>Delivered on Programme.</h2>
+        <div class="prose reveal reveal-d2">
+          <p>Elevation Built was founded on a single conviction: that commercial construction subcontracting in South Australia deserved better. Better systems, better communication, better accountability — and a team that Tier 1 builders could genuinely rely on.</p>
+          <p>We operate across four trade disciplines — ceilings and partitions, external cladding, bespoke carpentry, and specialty batten systems — delivering every project under licensed supervision with a documented 16-SOP operational framework that removes guesswork and eliminates surprises.</p>
+          <p>Our values are simple. Show up on programme. Document everything. Take ownership of the commercial position. And build long-term partnerships with the builders who trust us with their most demanding projects.</p>
+        </div>
+      </div>
+      <div class="split-img reveal reveal-d2">
+        <img src="images/hero.png" alt="Elevation Built commercial construction Adelaide" />
+        <div class="split-img-border"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section class="section" style="background: var(--bg);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="label">Our People</span>
+      <h2 class="section-title">The People Behind<br>the Programme.</h2>
+      <p class="section-sub" style="margin-top: 16px;">Experienced construction professionals across every discipline — from commercial management through to licensed site supervision.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal reveal-d1">
+        <div class="team-avatar">CM</div>
+        <h4>Construction Manager</h4>
+        <div class="role">Leadership &amp; Strategy</div>
+        <p>Oversees all project delivery, client relationships and commercial strategy. Maintains accountability for programme performance and quality standards across every Elevation Built project.</p>
+      </div>
+      <div class="team-card reveal reveal-d2">
+        <div class="team-avatar">PM</div>
+        <h4>Project Manager</h4>
+        <div class="role">Programme &amp; Cost Control</div>
+        <p>Drives 4-week lookahead planning, labour scheduling and cost management. Single point of contact for builder PMs — responsive, organised and commercially sharp.</p>
+      </div>
+      <div class="team-card reveal reveal-d3">
+        <div class="team-avatar">CA</div>
+        <h4>Contract Administrator</h4>
+        <div class="role">Variations &amp; Claims</div>
+        <p>Manages all scope changes, variation submissions and progress claims. Ensures the commercial position is protected and every variation is captured, costed and submitted on time.</p>
+      </div>
+      <div class="team-card reveal reveal-d4">
+        <div class="team-avatar">SS</div>
+        <h4>Site Supervisor</h4>
+        <div class="role">On-Site Leadership</div>
+        <p>Licensed site supervisors on every project. Responsible for safety, quality, trade coordination and daily programme compliance from mobilisation through to defects clearance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT STATS ===== -->
+<div class="about-stats">
+  <div class="about-stat-item reveal">
+    <div class="about-stat-num"><em>16</em></div>
+    <div class="about-stat-lbl">Documented SOPs</div>
+  </div>
+  <div class="about-stat-item reveal reveal-d1">
+    <div class="about-stat-num"><em>4</em></div>
+    <div class="about-stat-lbl">Trade Disciplines</div>
+  </div>
+  <div class="about-stat-item reveal reveal-d2">
+    <div class="about-stat-num"><em>SA</em></div>
+    <div class="about-stat-lbl">Based &amp; Operated</div>
   </div>
 </div>
 
-<section class="section">
-  <div class="grid-halves">
-    <div class="fade" style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.12);">
-      <img src="images/ceilings-partitions.png" alt="Elevation Built commercial construction Adelaide SA" style="width:100%;height:500px;object-fit:cover;" />
-    </div>
-    <div class="fade">
-      <span class="label-tag">Who We Are</span>
-      <h2 class="section-title">Built on Accountability, Systems &amp; Precision Delivery</h2>
-      <p style="font-size:16px;color:#555;line-height:1.75;margin-bottom:16px;">Elevation Built is an Adelaide-based commercial subcontractor specialising in ceilings, partitions, carpentry, external cladding and specialty batten systems. We partner exclusively with Tier 1 builders across South Australia — including SHAPE Australia, Mossop Construction and Chappell Construction — delivering the programme certainty, compliance rigour and variation management that major principal contractors require.</p>
-      <p style="font-size:16px;color:#555;line-height:1.75;margin-bottom:16px;">Our business is built on 16 documented Standard Operating Procedures that govern how we win work, plan projects, manage sites, control variations and process claims. Every project runs on a live 4-week lookahead programme, reviewed weekly with the principal contractor and updated to reflect current site conditions across Adelaide and regional South Australia.</p>
-      <p style="font-size:16px;color:#555;line-height:1.75;margin-bottom:28px;">Licensed supervisors and certified crews on every project. Zero tolerance for safety non-conformance. A culture of ownership — from Director to site. That's the standard at Elevation Built.</p>
-      <ul class="feature-list">
-        <li>Tier 1 Builder Partnerships</li>
-        <li>16 Documented SOPs</li>
-        <li>Licensed &amp; Certified Supervisors</li>
-        <li>4-Week Lookahead Programming</li>
-        <li>Variation Tracking &amp; Control</li>
-        <li>Adelaide &amp; SA Based</li>
-      </ul>
-      <div style="margin-top:32px;">
-        <a href="contact.html" class="btn btn-primary">Work With Us</a>
+<!-- ===== CTA ===== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-text">
+        <h2 class="cta-title">Ready to discuss<br>your next project?</h2>
+        <p class="cta-sub">Tendering, in design, or ready to start — we're ready to talk.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-white">
+          Get in Touch
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:0452378954" class="btn btn-outline" style="border-color:rgba(255,255,255,0.25); color:#fff;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12 19.79 19.79 0 011.23 3.43 2 2 0 013.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          0452 378 954
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section-dark">
-  <div class="section-header fade">
-    <span class="label-tag">How We Work</span>
-    <h2 class="section-title">How We Operate</h2>
-    <p class="section-sub">Three disciplines that drive every Elevation Built project in South Australia — from first contact to final payment.</p>
-  </div>
-  <div class="how-grid">
-    <div class="how-item fade">
-      <div class="how-icon">
-        <svg viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/eb-logo.png" alt="Elevation Built" class="footer-logo" />
+        <p class="footer-tagline">Adelaide's specialist commercial subcontractor — ceilings, partitions, carpentry, cladding and batten systems for Tier 1 builders across South Australia.</p>
       </div>
-      <h3>Win the Work</h3>
-      <p>Estimating from first principles. Competitive pricing from our SA-calibrated rate library. Relationships built over time with Adelaide's Tier 1 builders. We tender smart, price to win, and qualify our scope clearly up front — no surprises on either side.</p>
-    </div>
-    <div class="how-item fade">
-      <div class="how-icon">
-        <svg viewBox="0 0 24 24"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3"/></svg>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="ceilings-partitions.html">Ceilings &amp; Partitions</a></li>
+          <li><a href="cladding.html">External Cladding</a></li>
+          <li><a href="carpentry.html">Bespoke Carpentry</a></li>
+          <li><a href="battens.html">Specialty Battens</a></li>
+        </ul>
       </div>
-      <h3>Deliver the Work</h3>
-      <p>4-week lookahead planning, daily site management by certified supervisors, and proactive RFI resolution. Safety-first culture with current SWMS and prestarts on every Adelaide and SA site. We deliver to programme and hand over clean — every time.</p>
-    </div>
-    <div class="how-item fade">
-      <div class="how-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">All Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
-      <h3>Get Paid</h3>
-      <p>Progress claims submitted on time and in full. Every variation identified, costed and submitted — nothing falls off the scope. Payment claims managed systematically by our Contract Administrator so the team can focus on the work, not the paperwork.</p>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12 19.79 19.79 0 011.23 3.43 2 2 0 013.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <a href="tel:0452378954">0452 378 954</a>
+        </div>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:robert@elevationbuilt.com.au">robert@elevationbuilt.com.au</a>
+        </div>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>Adelaide, South Australia</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Elevation Built Pty Ltd. All rights reserved.</p>
+      <span class="footer-abn">ABN 55 690 757 521 &nbsp;|&nbsp; Adelaide, SA</span>
     </div>
   </div>
-</section>
-
-<section class="section section-dark">
-  <div class="section-header fade">
-    <span class="label-tag">The Team</span>
-    <h2 class="section-title">The People Behind the Programme</h2>
-    <p class="section-sub">A small, experienced leadership team — each one accountable for their domain, aligned to the same standard of delivery across every project in South Australia.</p>
-  </div>
-  <div class="team-grid">
-    <div class="team-card fade" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.1);">
-      <div class="team-avatar">CM</div>
-      <h4 style="color:#fff;">Construction Manager</h4>
-      <p style="font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.65;margin-top:12px;">Oversees business development, key builder relationships, major contracts and strategic direction across all South Australia projects.</p>
-    </div>
-    <div class="team-card fade" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.1);">
-      <div class="team-avatar">PM</div>
-      <h4 style="color:#fff;">Project Manager</h4>
-      <p style="font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.65;margin-top:12px;">End-to-end project management across Elevation Built's active Adelaide and SA portfolio. Owns the programme, labour allocation, progress claims and subcontractor coordination.</p>
-    </div>
-    <div class="team-card fade" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.1);">
-      <div class="team-avatar">CA</div>
-      <h4 style="color:#fff;">Contract Administrator</h4>
-      <p style="font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.65;margin-top:12px;">Contract administration, variation management and cost systems across all active projects. Every scope change captured, priced and submitted — protecting Elevation Built's commercial position on every project.</p>
-    </div>
-    <div class="team-card fade" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.1);">
-      <div class="team-avatar">SS</div>
-      <h4 style="color:#fff;">Site Supervisor</h4>
-      <p style="font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.65;margin-top:12px;">Licensed site supervision on every project. Responsible for programme execution, trade coordination, quality standards and safety compliance across all South Australia sites.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section-sm section-dark">
-  <div class="stats-bar fade">
-    <div class="stat-item">
-      <div class="stat-num">20+</div>
-      <div class="stat-lbl">Projects Completed</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">16</div>
-      <div class="stat-lbl">Documented SOPs</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">4</div>
-      <div class="stat-lbl">Trade Specialties</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">SA</div>
-      <div class="stat-lbl">Based &amp; Operating</div>
-    </div>
-  </div>
-</section>
-
-<section class="section section-light">
-  <div class="cta-banner fade">
-    <div><h2>Ready to discuss your Adelaide project?</h2><p>Get in touch for a quote or to discuss your project requirements.</p></div>
-    <div class="cta-banner-actions"><a href="contact.html" class="btn btn-white">Get a Quote</a><a href="tel:0452378954" class="btn btn-outline-white">0452 378 954</a></div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <a href="./" class="nav-logo"><img src="images/eb-logo.png" alt="Elevation Built" style="height:44px;width:auto;display:block;"></a>
-      <p>Adelaide's commercial construction specialists — ceilings, partitions, carpentry, cladding and specialty battens for Tier 1 builders across South Australia.</p>
-    </div>
-    <div class="footer-col"><h5>Services</h5><ul><li><a href="ceilings-partitions.html">Ceilings &amp; Partitions</a></li><li><a href="carpentry.html">Carpentry</a></li><li><a href="cladding.html">External Cladding</a></li><li><a href="battens.html">Specialty Battens</a></li></ul></div>
-    <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    <div class="footer-col"><h5>Contact</h5><ul><li><a href="tel:0452378954">0452 378 954</a></li><li><a href="mailto:robert@elevationbuilt.com.au">robert@elevationbuilt.com.au</a></li><li><a href="contact.html">Get a Quote</a></li></ul></div>
-  </div>
-  <div class="footer-bottom"><p>© 2026 Elevation Built Pty Ltd. All rights reserved.</p><span class="footer-abn">ABN 55 690 757 521 | Adelaide, SA</span></div>
 </footer>
 
-<script src="js/main.js"></script>
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+}, { passive: true });
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+let menuOpen = false;
+hamburger.addEventListener('click', () => {
+  menuOpen = !menuOpen;
+  mobileMenu.classList.toggle('open', menuOpen);
+  document.body.style.overflow = menuOpen ? 'hidden' : '';
+});
+function closeMobileMenu() {
+  menuOpen = false;
+  mobileMenu.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      revealObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => revealObserver.observe(el));
+</script>
 </body>
 </html>

@@ -3,263 +3,431 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elevation Built | Ceilings & Partitions Adelaide | Commercial Construction SA</title>
+  <title>Elevation Built | Commercial Construction Adelaide | Ceilings, Cladding & Carpentry SA</title>
   <meta name="description" content="Elevation Built — Adelaide's commercial construction specialists. Suspended ceilings, partition walls, bespoke carpentry, external cladding and specialty batten systems. Tier 1 builder partner. Call 0452 378 954." />
-  <meta name="keywords" content="ceilings and partitions Adelaide, commercial construction Adelaide, suspended ceilings Adelaide SA, partition walls Adelaide, external cladding Adelaide, carpentry Adelaide" />
-  <meta name="geo.region" content="AU-SA" />
-  <meta name="geo.placename" content="Adelaide, South Australia" />
-  <link rel="canonical" href="https://elevationbuilt.com.au/" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Elevation Built Pty Ltd","telephone":"+61452378954","email":"robert@elevationbuilt.com.au","url":"https://elevationbuilt.com.au","address":{"@type":"PostalAddress","addressLocality":"Adelaide","addressRegion":"SA","addressCountry":"AU"},"areaServed":[{"@type":"City","name":"Adelaide"},{"@type":"State","name":"South Australia"}],"description":"Adelaide commercial construction specialists — ceilings, partitions, carpentry, cladding and batten systems for Tier 1 builders.","identifier":{"@type":"PropertyValue","name":"ABN","value":"55 690 757 521"}}</script>
+  <meta name="keywords" content="ceilings and partitions Adelaide, commercial construction Adelaide, suspended ceilings Adelaide SA, partition walls Adelaide, external cladding Adelaide, CFC cladding Adelaide, carpentry Adelaide, specialty battens Adelaide" />
+  <link rel="canonical" href="https://elevationbuilt.com.au" />
+  <meta property="og:title" content="Elevation Built | Commercial Construction Adelaide" />
+  <meta property="og:description" content="Adelaide's specialist commercial subcontractor — ceilings, partitions, carpentry, CFC cladding and batten systems for Tier 1 builders." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    /* HOME-SPECIFIC */
-    .home-hero {
-      min-height: 100vh;
-      position: relative;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-    }
-    .home-hero-bg {
-      position: absolute; inset: 0;
-      background: url('images/hero.png') center/cover no-repeat;
-      filter: brightness(0.38);
-    }
-    .home-hero-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(135deg, rgba(43,43,43,0.6) 0%, rgba(91,31,184,0.25) 100%);
-    }
-    .home-hero-content {
-      position: relative; z-index: 2;
-      padding: 0 64px;
-      max-width: 780px;
-    }
-    .hero-pill {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(91,31,184,0.8);
-      color: #fff; font-size: 11px; font-weight: 600;
-      letter-spacing: 0.18em; text-transform: uppercase;
-      padding: 7px 16px; border-radius: 100px;
-      margin-bottom: 28px;
-    }
-    .hero-pill::before { content:''; width:6px; height:6px; background:#a78bfa; border-radius:50%; }
-    .home-hero-content h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(44px, 5.5vw, 74px);
-      font-weight: 800; color: #fff;
-      line-height: 1.07; letter-spacing: -0.04em;
-      margin-bottom: 22px;
-    }
-    .home-hero-content h1 em { font-style: normal; color: #c4b5fd; }
-    .home-hero-content p { font-size: 18px; color: rgba(255,255,255,0.78); max-width: 520px; margin-bottom: 40px; line-height: 1.72; }
-    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
-    .hero-stats-bar {
-      position: absolute; bottom: 0; left: 0; right: 0;
-      z-index: 2;
-      display: grid;
-      grid-template-columns: repeat(4,1fr);
-      background: rgba(20,20,20,0.88);
-      backdrop-filter: blur(12px);
-    }
-    .hs-item { padding: 24px 32px; border-right: 1px solid rgba(255,255,255,0.07); }
-    .hs-item:last-child { border-right: none; }
-    .hs-num { font-size: 30px; font-weight: 900; color: #fff; letter-spacing: -0.04em; line-height: 1; margin-bottom: 4px; }
-    .hs-lbl { font-size: 12px; color: rgba(255,255,255,0.5); font-weight: 500; }
-
-    /* Service cards home */
-    .service-cards { display: grid; grid-template-columns: repeat(2,1fr); gap: 28px; }
-    .sc {
-      position: relative; border-radius: 16px; overflow: hidden;
-      cursor: pointer; text-decoration: none;
-      display: block;
-    }
-    .sc img { width: 100%; height: 320px; object-fit: cover; transition: transform 0.4s; display: block; }
-    .sc:hover img { transform: scale(1.04); }
-    .sc-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.82) 30%, rgba(0,0,0,0.1) 100%);
-      padding: 28px;
-      display: flex; flex-direction: column; justify-content: flex-end;
-    }
-    .sc-tag { font-size: 10.5px; font-weight: 700; color: #a78bfa; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 6px; }
-    .sc-overlay h3 { font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 8px; letter-spacing: -0.03em; }
-    .sc-overlay p { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 16px; }
-    .sc-link { font-size: 13px; font-weight: 600; color: #c4b5fd; }
-
-    /* Why us */
-    .why-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
-    .why-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 14px; padding: 32px 28px;
-    }
-    .why-num { font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 800; color: #7c3dd6; line-height: 1; margin-bottom: 14px; }
-    .why-card h3 { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 8px; }
-    .why-card p { font-size: 14px; color: rgba(255,255,255,0.58); line-height: 1.7; }
-
-    @media (max-width: 768px) {
-      .home-hero-content { padding: 0 20px; }
-      .service-cards { grid-template-columns: 1fr; }
-      .why-grid { grid-template-columns: 1fr; }
-      .hero-stats-bar { grid-template-columns: repeat(2,1fr); }
-    }
-  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Elevation Built Pty Ltd","telephone":"+61452378954","email":"robert@elevationbuilt.com.au","url":"https://elevationbuilt.com.au","address":{"@type":"PostalAddress","addressLocality":"Adelaide","addressRegion":"SA","addressCountry":"AU"},"areaServed":[{"@type":"City","name":"Adelaide"},{"@type":"State","name":"South Australia"}],"description":"Adelaide commercial construction specialists — ceilings, partitions, carpentry, cladding and batten systems for Tier 1 builders.","identifier":{"@type":"PropertyValue","name":"ABN","value":"55 690 757 521"}}</script>
 </head>
 <body>
 
+<!-- ===== NAV ===== -->
 <nav class="nav" id="nav">
-  <a href="./" class="nav-logo">
-    <img src="images/eb-logo.png" alt="Elevation Built" style="height:44px;width:auto;display:block;">
-  </a>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="./" class="active">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
-  </ul>
-  <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="./" class="nav-logo">
+        <img src="images/eb-logo.png" alt="Elevation Built" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="./" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
 </nav>
 
-<!-- HERO -->
-<section class="home-hero">
-  <div class="home-hero-bg"></div>
-  <div class="home-hero-overlay"></div>
-  <div class="home-hero-content fade">
-    <div class="hero-pill">Adelaide's Commercial Construction Specialists</div>
-    <h1>Precision Work.<br/><em>Delivered on Time.</em></h1>
-    <p>Elevation Built partners with Tier 1 builders across South Australia — delivering suspended ceilings, partition walls, bespoke carpentry, external cladding, and specialty batten systems on every project.</p>
-    <div class="hero-btns">
-      <a href="contact.html" class="btn btn-primary">Request a Quote</a>
-      <a href="services.html" class="btn btn-outline-white">Our Services →</a>
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="./" onclick="closeMobileMenu()">Home</a>
+  <a href="services.html" onclick="closeMobileMenu()">Services</a>
+  <a href="projects.html" onclick="closeMobileMenu()">Projects</a>
+  <a href="about.html" onclick="closeMobileMenu()">About</a>
+  <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+  <a href="contact.html" class="btn btn-primary" style="margin-top:8px;font-size:18px;" onclick="closeMobileMenu()">Get a Quote</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="label">Adelaide, South Australia</span>
+      </div>
+      <h1 class="hero-title">
+        Built for<br>
+        <em>Tier&nbsp;1</em><br>
+        Builders.
+      </h1>
+      <p class="hero-sub">
+        Elevation Built delivers ceilings, partitions, CFC cladding, carpentry and specialty battens to the highest commercial standard — on programme, every time.
+      </p>
+      <div class="hero-actions">
+        <a href="services.html" class="btn btn-primary">
+          Our Services
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="contact.html" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hs-num">$12M</div>
+          <div class="hs-lbl">FY27 Target</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hs-num">Tier&nbsp;1</div>
+          <div class="hs-lbl">Builder Partners</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hs-num">4</div>
+          <div class="hs-lbl">Trade Disciplines</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hs-num">SA</div>
+          <div class="hs-lbl">Based &amp; Operated</div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="hero-stats-bar">
-    <div class="hs-item"><div class="hs-num">6+</div><div class="hs-lbl">Active Projects</div></div>
-    <div class="hs-item"><div class="hs-num">Tier 1</div><div class="hs-lbl">Builder Partner</div></div>
-    <div class="hs-item"><div class="hs-num">4</div><div class="hs-lbl">Trade Disciplines</div></div>
-    <div class="hs-item"><div class="hs-num">SA</div><div class="hs-lbl">Based & Operated</div></div>
+  <div class="scroll-indicator" id="scrollIndicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
   </div>
 </section>
 
-<!-- SERVICES OVERVIEW -->
-<section class="section section-light">
-  <div class="section-header fade">
-    <span class="label-tag">What We Do</span>
-    <h2 class="section-title">Specialist Commercial<br/>Construction Services — Adelaide</h2>
-    <p class="section-sub">Four core trade disciplines. One accountable subcontractor. Built for Tier 1 commercial programmes across South Australia.</p>
+<!-- ===== TRUST BAR ===== -->
+<div class="trust-bar">
+  <div class="trust-track" id="trustTrack">
+    <span class="trust-item">Mossop Construction</span>
+    <span class="trust-item">SHAPE Australia</span>
+    <span class="trust-item">Chappell Construction</span>
+    <span class="trust-item">Pascale Construction</span>
+    <span class="trust-item">Kennett Builders</span>
+    <span class="trust-item">Cook Building</span>
+    <span class="trust-item">Sarah Construction</span>
+    <span class="trust-item">Tier 1 Adelaide</span>
+    <span class="trust-item">Mossop Construction</span>
+    <span class="trust-item">SHAPE Australia</span>
+    <span class="trust-item">Chappell Construction</span>
+    <span class="trust-item">Pascale Construction</span>
+    <span class="trust-item">Kennett Builders</span>
+    <span class="trust-item">Cook Building</span>
+    <span class="trust-item">Sarah Construction</span>
+    <span class="trust-item">Tier 1 Adelaide</span>
   </div>
-  <div class="service-cards">
-    <a href="ceilings-partitions.html" class="sc fade">
-      <img src="images/ceilings-partitions.png" alt="Ceilings and Partitions Installation Adelaide" />
-      <div class="sc-overlay">
-        <div class="sc-tag">Service</div>
-        <h3>Ceilings & Partitions</h3>
-        <p>Suspended ceiling grid systems, acoustic tiles, steel stud framing and plasterboard partitions across Adelaide.</p>
-        <span class="sc-link">Learn more →</span>
-      </div>
-    </a>
-    <a href="carpentry.html" class="sc fade">
-      <img src="images/carpentry.png" alt="Commercial Carpentry Adelaide" />
-      <div class="sc-overlay">
-        <div class="sc-tag">Service</div>
-        <h3>Bespoke Carpentry</h3>
-        <p>Custom joinery, built-in millwork, reception desks, and high-spec commercial carpentry fitouts.</p>
-        <span class="sc-link">Learn more →</span>
-      </div>
-    </a>
-    <a href="cladding.html" class="sc fade">
-      <img src="images/cladding.png" alt="External Cladding Adelaide" />
-      <div class="sc-overlay">
-        <div class="sc-tag">Service</div>
-        <h3>External Cladding</h3>
-        <p>Fibre cement and architectural façade cladding for commercial buildings across SA.</p>
-        <span class="sc-link">Learn more →</span>
-      </div>
-    </a>
-    <a href="battens.html" class="sc fade">
-      <img src="images/battens.png" alt="Specialty Battens Adelaide" />
-      <div class="sc-overlay">
-        <div class="sc-tag">Service</div>
-        <h3>Specialty Battens</h3>
-        <p>Architectural timber and metal batten systems, acoustic screens, and feature wall elements.</p>
-        <span class="sc-link">Learn more →</span>
-      </div>
-    </a>
-  </div>
-</section>
+</div>
 
-<!-- STATS -->
-<section class="section-sm" style="padding: 56px 64px;">
-  <div class="stats-bar fade">
-    <div class="stat-item"><div class="stat-num">$12M</div><div class="stat-lbl">FY27 Target</div></div>
-    <div class="stat-item"><div class="stat-num">16</div><div class="stat-lbl">SOPs — Systems Driven</div></div>
-    <div class="stat-item"><div class="stat-num">100%</div><div class="stat-lbl">Commercial Focus</div></div>
-    <div class="stat-item"><div class="stat-num">Tier 1</div><div class="stat-lbl">Builder Partnerships</div></div>
-  </div>
-</section>
-
-<!-- WHY US -->
-<section class="section section-dark">
-  <div class="section-header fade">
-    <span class="label-tag">Why Elevation Built</span>
-    <h2 class="section-title">The Difference Is in<br/>How We Operate</h2>
-    <p class="section-sub">Builders choose us because we deliver — not just the trade work, but the programme discipline, communication, and accountability that makes sites run smoothly.</p>
-  </div>
-  <div class="why-grid">
-    <div class="why-card fade"><div class="why-num">01</div><h3>Programme Accountability</h3><p>4-week lookaheads, daily prestarts, and labour tracked to the day. Delays get flagged before they cascade.</p></div>
-    <div class="why-card fade"><div class="why-num">02</div><h3>Variation Control</h3><p>Every scope change captured, priced, and approved before work starts. No surprises at the end.</p></div>
-    <div class="why-card fade"><div class="why-num">03</div><h3>Licensed & Certified</h3><p>EWPA-certified operators, current SWMS, daily safety prestarts, and licensed supervisors on every site.</p></div>
-    <div class="why-card fade"><div class="why-num">04</div><h3>Clean Sites</h3><p>Materials stored properly, waste managed, access maintained. We're easy to work with.</p></div>
-    <div class="why-card fade"><div class="why-num">05</div><h3>Fast Communication</h3><p>RFIs raised same day, SIs tracked, builders kept in the loop. You'll never chase us for an update.</p></div>
-    <div class="why-card fade"><div class="why-num">06</div><h3>Scalable Capacity</h3><p>Systems and supervisors in place to scale from $200k to $1M+ projects without losing quality.</p></div>
-  </div>
-</section>
-
-<!-- PROJECTS TEASER -->
-<section class="section">
-  <div class="section-header fade">
-    <span class="label-tag">Recent Work — South Australia</span>
-    <h2 class="section-title">Projects Across Adelaide & SA</h2>
-    <p class="section-sub">Active across commercial fitout, healthcare, education and retail — partnering with SA's leading Tier 1 builders.</p>
-  </div>
-  <div style="text-align:center; padding: 60px 20px;" class="fade">
-    <p style="color:#888; font-size:1.1rem;">Project portfolio coming soon.</p>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section section-light">
-  <div class="cta-banner fade">
-    <div>
-      <h2>Ready to discuss your Adelaide project?</h2>
-      <p>Whether you're tendering, in design, or ready to start — we'd love to hear from you.</p>
-    </div>
-    <div class="cta-banner-actions">
-      <a href="contact.html" class="btn btn-white">Get a Quote</a>
-      <a href="tel:0452378954" class="btn btn-outline-white">0452 378 954</a>
+<!-- ===== SERVICES ===== -->
+<section class="section" style="background:var(--bg); padding-top: clamp(80px, 8vw, 120px);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="label">What We Do</span>
+      <h2 class="section-title">Four specialist trades.<br>One accountable team.</h2>
+      <p class="section-sub" style="margin-top:16px;">From commercial fitout to façade systems — delivered by licensed crews with a proven track record across South Australia's Tier 1 construction sector.</p>
     </div>
   </div>
-</section>
+  <div style="max-width:var(--max-w); margin: 0 auto; padding: 0 var(--pad-h);">
+    <div class="services-grid">
 
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <a href="./" class="nav-logo">
-        <img src="images/eb-logo.png" alt="Elevation Built" style="height:44px;width:auto;display:block;">
+      <a href="ceilings-partitions.html" class="service-card reveal reveal-d1">
+        <img src="images/ceilings-partitions.png" alt="Ceilings and partitions Adelaide" class="service-card-img" />
+        <div class="service-card-overlay">
+          <div class="service-tag">01 — Specialist Fitout</div>
+          <div class="service-name">Ceilings &amp; Partitions</div>
+          <div class="service-blurb">Suspended ceilings, acoustic systems and partition walls for commercial fitout, healthcare, education and retail across Adelaide SA.</div>
+          <div class="service-link">
+            Learn more
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
       </a>
-      <p>Adelaide's commercial construction specialists — ceilings, partitions, carpentry, cladding and specialty battens for Tier 1 builders across South Australia.</p>
+
+      <a href="cladding.html" class="service-card reveal reveal-d2">
+        <img src="images/cladding.png" alt="CFC external cladding Adelaide" class="service-card-img" />
+        <div class="service-card-overlay">
+          <div class="service-tag">02 — Façade Systems</div>
+          <div class="service-name">External Cladding</div>
+          <div class="service-blurb">Fibre cement cladding and architectural façade solutions for commercial buildings across South Australia — NCC-compliant, weathertight installation.</div>
+          <div class="service-link">
+            Learn more
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <a href="carpentry.html" class="service-card reveal reveal-d3">
+        <img src="images/carpentry.png" alt="Bespoke commercial carpentry Adelaide" class="service-card-img" />
+        <div class="service-card-overlay">
+          <div class="service-tag">03 — Bespoke Timber</div>
+          <div class="service-name">Bespoke Carpentry</div>
+          <div class="service-blurb">Architectural timber framing, custom joinery, structural carpentry and precision fit-out for commercial and institutional projects across SA.</div>
+          <div class="service-link">
+            Learn more
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <a href="battens.html" class="service-card reveal reveal-d4">
+        <img src="images/battens.png" alt="Specialty batten systems Adelaide" class="service-card-img" />
+        <div class="service-card-overlay">
+          <div class="service-tag">04 — Acoustic &amp; Visual</div>
+          <div class="service-name">Specialty Battens</div>
+          <div class="service-blurb">Architectural batten wall and ceiling systems — designed and installed to meet acoustic NRC targets for healthcare, education and corporate environments.</div>
+          <div class="service-link">
+            Learn more
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
     </div>
-    <div class="footer-col"><h5>Services</h5><ul><li><a href="ceilings-partitions.html">Ceilings &amp; Partitions</a></li><li><a href="carpentry.html">Carpentry</a></li><li><a href="cladding.html">External Cladding</a></li><li><a href="battens.html">Specialty Battens</a></li></ul></div>
-    <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    <div class="footer-col"><h5>Contact</h5><ul><li><a href="tel:0452378954">0452 378 954</a></li><li><a href="mailto:robert@elevationbuilt.com.au">robert@elevationbuilt.com.au</a></li><li><a href="contact.html">Get a Quote</a></li></ul></div>
   </div>
-  <div class="footer-bottom"><p>© 2026 Elevation Built Pty Ltd. All rights reserved.</p><span class="footer-abn">ABN 55 690 757 521 | Adelaide, SA</span></div>
+</section>
+
+<!-- ===== WHY ELEVATION BUILT ===== -->
+<section class="section" style="background: var(--surface);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="label">Why Elevation Built</span>
+      <h2 class="section-title">The standard Tier&nbsp;1<br>builders expect.</h2>
+    </div>
+    <div class="why-grid">
+
+      <div class="why-item reveal reveal-d1">
+        <div class="why-num">01</div>
+        <h3>Licensed Supervision on Every Job</h3>
+        <p>Every Elevation Built project is run by a licenced site supervisor. No exceptions. One point of accountability for programme, quality and safety from day one to handover.</p>
+      </div>
+
+      <div class="why-item reveal reveal-d2">
+        <div class="why-num">02</div>
+        <h3>On-Programme Delivery</h3>
+        <p>We operate on 4-week lookahead programmes, updated weekly. Our team identifies clashes, confirms labour and locks in sequencing before problems hit the site.</p>
+      </div>
+
+      <div class="why-item reveal reveal-d3">
+        <div class="why-num">03</div>
+        <h3>Variation Control</h3>
+        <p>Every scope change is captured, costed and submitted before work proceeds. Our Contract Administrator owns the commercial position so nothing falls off the scope.</p>
+      </div>
+
+      <div class="why-item reveal reveal-d4">
+        <div class="why-num">04</div>
+        <h3>Documented Systems</h3>
+        <p>16 company SOPs covering delivery, safety, communication and commercial management. Built for scale — not dependent on any single person.</p>
+      </div>
+
+      <div class="why-item reveal reveal-d5">
+        <div class="why-num">05</div>
+        <h3>NCC-Compliant Installations</h3>
+        <p>Fire-rated partitions, acoustic-rated assemblies, NCC Volume One cladding — full compliance documentation prepared and maintained throughout each project.</p>
+      </div>
+
+      <div class="why-item reveal">
+        <div class="why-num">06</div>
+        <h3>Scalable Capacity</h3>
+        <p>Systems and supervision in place to scale from $200k to $1M+ projects without losing quality, accountability or communication standards.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<div class="stats-strip">
+  <div class="container" style="padding:0;">
+    <div class="stats-grid">
+      <div class="stat-cell reveal">
+        <div class="stat-big" data-count="12" data-prefix="$" data-suffix="M">$12M</div>
+        <div class="stat-lbl">FY27 Revenue Target</div>
+      </div>
+      <div class="stat-cell reveal reveal-d1">
+        <div class="stat-big">16</div>
+        <div class="stat-lbl">Documented SOPs</div>
+      </div>
+      <div class="stat-cell reveal reveal-d2">
+        <div class="stat-big"><em>100%</em></div>
+        <div class="stat-lbl">Commercial Focus</div>
+      </div>
+      <div class="stat-cell reveal reveal-d3">
+        <div class="stat-big">Tier&nbsp;<em>1</em></div>
+        <div class="stat-lbl">Builder Partnerships</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ABOUT SPLIT ===== -->
+<section class="split-section section" style="background: var(--bg);">
+  <div class="container">
+    <div class="split-inner">
+      <div class="split-img reveal">
+        <img src="images/hero.png" alt="Elevation Built commercial construction Adelaide" />
+        <div class="split-img-border"></div>
+      </div>
+      <div class="split-content">
+        <span class="label reveal">About Us</span>
+        <h2 class="section-title reveal reveal-d1" style="margin: 20px 0 20px;">A specialist subcontractor built for commercial SA.</h2>
+        <p class="section-sub reveal reveal-d2" style="margin-bottom: 36px;">Elevation Built is a licensed commercial subcontractor operating across Adelaide and South Australia. We deliver ceilings, partitions, carpentry, cladding and batten systems to Tier 1 builders who expect no surprises.</p>
+        <div class="split-points">
+          <div class="split-point reveal reveal-d2">
+            <div class="split-point-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <h4>ABN 55 690 757 521</h4>
+              <p>Registered, licensed and insured. Compliant with all SA regulatory requirements.</p>
+            </div>
+          </div>
+          <div class="split-point reveal reveal-d3">
+            <div class="split-point-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div>
+              <h4>Experienced Leadership Team</h4>
+              <p>Construction Manager, Project Manager, Contract Administrator and licensed Site Supervisors on every project.</p>
+            </div>
+          </div>
+          <div class="split-point reveal reveal-d4">
+            <div class="split-point-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div>
+              <h4>Adelaide Based, SA Operated</h4>
+              <p>Local team. Responsive. No interstate delays — we're here when you need us.</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 36px;" class="reveal reveal-d5">
+          <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-text">
+        <h2 class="cta-title">Ready to discuss<br>your next project?</h2>
+        <p class="cta-sub">Tendering, in design, or ready to start — we're ready to talk.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-white">
+          Get in Touch
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:0452378954" class="btn btn-outline" style="border-color:rgba(255,255,255,0.25); color:#fff;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12 19.79 19.79 0 011.23 3.43 2 2 0 013.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          0452 378 954
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/eb-logo.png" alt="Elevation Built" class="footer-logo" />
+        <p class="footer-tagline">Adelaide's specialist commercial subcontractor — ceilings, partitions, carpentry, cladding and batten systems for Tier 1 builders across South Australia.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="ceilings-partitions.html">Ceilings &amp; Partitions</a></li>
+          <li><a href="cladding.html">External Cladding</a></li>
+          <li><a href="carpentry.html">Bespoke Carpentry</a></li>
+          <li><a href="battens.html">Specialty Battens</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">All Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12 19.79 19.79 0 011.23 3.43 2 2 0 013.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <a href="tel:0452378954">0452 378 954</a>
+        </div>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:robert@elevationbuilt.com.au">robert@elevationbuilt.com.au</a>
+        </div>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>Adelaide, South Australia</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Elevation Built Pty Ltd. All rights reserved.</p>
+      <span class="footer-abn">ABN 55 690 757 521 &nbsp;|&nbsp; Adelaide, SA</span>
+    </div>
+  </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script>
+// ===== NAV SCROLL =====
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+}, { passive: true });
+
+// ===== HAMBURGER =====
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+let menuOpen = false;
+hamburger.addEventListener('click', () => {
+  menuOpen = !menuOpen;
+  mobileMenu.classList.toggle('open', menuOpen);
+  document.body.style.overflow = menuOpen ? 'hidden' : '';
+});
+function closeMobileMenu() {
+  menuOpen = false;
+  mobileMenu.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ===== SCROLL REVEAL =====
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      revealObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => revealObserver.observe(el));
+
+// ===== SCROLL INDICATOR =====
+const scrollInd = document.getElementById('scrollIndicator');
+if (scrollInd) {
+  scrollInd.addEventListener('click', () => {
+    window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+  });
+  window.addEventListener('scroll', () => {
+    if (scrollInd) scrollInd.style.opacity = window.scrollY > 80 ? '0' : '1';
+  }, { passive: true });
+}
+</script>
 </body>
 </html>
