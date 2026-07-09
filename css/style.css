@@ -167,7 +167,7 @@ ul { list-style: none; }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
 .nav-logo img { height: 36px; width: auto; }
 .nav-links {
-  display: flex; align-items: center; gap: 32px;
+  display: flex; align-items: center; gap: 22px;
 }
 .nav-links a {
   font-family: var(--font-head);
