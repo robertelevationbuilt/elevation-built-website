@@ -788,6 +788,137 @@ ul { list-style: none; }
   border: 1px solid rgba(155,111,240,0.2);
 }
 
+/* ============ VMV — VISION / MISSION / VALUES ============ */
+.vmv-vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: var(--border);
+  margin-top: 56px;
+  margin-bottom: 2px;
+}
+
+.vmv-card {
+  background: var(--card);
+  padding: clamp(36px, 4vw, 56px);
+  position: relative;
+  transition: background 0.3s;
+}
+.vmv-card:hover { background: var(--card-hover); }
+
+.vmv-vision { border-left: 3px solid var(--purple); }
+.vmv-mission { border-left: 3px solid var(--border-purple); }
+
+.vmv-card-tag {
+  font-family: var(--font-head);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--purple-light);
+  margin-bottom: 20px;
+}
+
+.vmv-card-title {
+  font-family: var(--font-head);
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 700;
+  line-height: 1.22;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.vmv-card-body {
+  font-size: 14.5px;
+  color: var(--grey);
+  line-height: 1.75;
+}
+
+/* QATCO values block */
+.vmv-values-wrap {
+  background: var(--card);
+  padding: clamp(36px, 4vw, 56px);
+  margin-bottom: 0;
+}
+
+.vmv-values-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.vmv-values-word {
+  font-family: var(--font-head);
+  font-size: clamp(32px, 3.5vw, 52px);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--white);
+  line-height: 1;
+}
+
+.vmv-values-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+  background: var(--border);
+}
+
+.vmv-value-card {
+  background: var(--card);
+  padding: 32px 24px;
+  transition: background 0.3s;
+  position: relative;
+}
+.vmv-value-card:hover { background: var(--card-hover); }
+.vmv-value-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--purple);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+.vmv-value-card:hover::after { transform: scaleX(1); }
+
+.vmv-letter {
+  font-family: var(--font-head);
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--purple);
+  line-height: 1;
+  margin-bottom: 16px;
+  opacity: 0.85;
+}
+
+.vmv-value-card h4 {
+  font-family: var(--font-head);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.vmv-value-card p {
+  font-size: 13px;
+  color: var(--grey);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .vmv-vm-grid { grid-template-columns: 1fr; }
+  .vmv-values-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .vmv-values-grid { grid-template-columns: repeat(2, 1fr); }
+  .vmv-values-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+@media (max-width: 400px) {
+  .vmv-values-grid { grid-template-columns: 1fr; }
+}
+
 /* ============ RICH TEXT ============ */
 .prose h2 { font-family: var(--font-head); font-size: 28px; font-weight: 700; color: var(--white); margin: 40px 0 16px; }
 .prose h3 { font-family: var(--font-head); font-size: 20px; font-weight: 600; color: var(--white); margin: 32px 0 12px; }
