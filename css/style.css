@@ -749,6 +749,34 @@ ul { list-style: none; }
 .footer-copy { font-size: 12px; color: rgba(255,255,255,0.18); }
 .footer-abn { font-size: 12px; color: rgba(255,255,255,0.18); }
 
+/* ============ BACK LINK ============ */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  margin-bottom: 28px;
+  transition: color 0.2s, gap 0.2s;
+  min-height: 44px;
+}
+.back-link svg {
+  width: 16px; height: 16px;
+  stroke: currentColor;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+.back-link:hover {
+  color: var(--purple-light);
+  gap: 12px;
+}
+.back-link:hover svg {
+  transform: translateX(-4px);
+}
+
 /* ============ PAGE HERO (inner pages) ============ */
 .page-hero {
   position: relative;
