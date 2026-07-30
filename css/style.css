@@ -2,34 +2,80 @@
    ELEVATION BUILT — PREMIUM DESIGN SYSTEM
    ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+/* DS Part 1 — Typography: Helvetica Neue, no Google Fonts */
+/* DS Part 1 — Colours: corrected primary purple #8C52FF */
+/* DS Part 1 — Spacing: strict 8pt scale */
+/* DS Part 2 — Components: BTN-001, BADGE-001, ALT-001 status classes */
+/* DS Part 1 — Accessibility: WCAG 2.1 AA, 44×44px touch targets */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
+  /* Surfaces */
   --bg:            #060608;
   --surface:       #0d0d11;
   --card:          #111118;
   --card-hover:    #16161f;
-  --purple:        #5B1FB8;
-  --purple-mid:    #6e2fd4;
-  --purple-light:  #9b6ff0;
-  --purple-glow:   rgba(91, 31, 184, 0.30);
-  --purple-subtle: rgba(91, 31, 184, 0.08);
+
+  /* Primary purple — DS Part 1 §2.1 corrected token */
+  --purple:        #8C52FF;
+  --purple-mid:    #7a3df0;
+  --purple-light:  #b48fff;
+  --purple-glow:   rgba(140, 82, 255, 0.30);
+  --purple-subtle: rgba(140, 82, 255, 0.08);
+
+  /* Status colours — DS Part 1 §2.1 — never use as sole signal */
+  --success:       #22C55E;
+  --success-tint:  rgba(34, 197, 94, 0.10);
+  --warning:       #F59E0B;
+  --warning-tint:  rgba(245, 158, 11, 0.10);
+  --critical:      #EF4444;
+  --critical-tint: rgba(239, 68, 68, 0.10);
+  --info:          #3B82F6;
+  --info-tint:     rgba(59, 130, 246, 0.10);
+
+  /* Neutrals */
   --white:         #ffffff;
   --off-white:     #ededf2;
   --grey-light:    #b8b8c8;
   --grey:          #6a6a7a;
   --border:        rgba(255, 255, 255, 0.06);
-  --border-purple: rgba(91, 31, 184, 0.35);
-  --font-head:     'Space Grotesk', -apple-system, sans-serif;
-  --font-body:     'Inter', -apple-system, sans-serif;
+  --border-purple: rgba(140, 82, 255, 0.35);
+
+  /* Typography — DS Part 1 §3: Helvetica Neue, no Google Fonts */
+  --font-head:     'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-body:     'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /* Layout */
   --max-w:         1240px;
   --pad-h:         clamp(20px, 5vw, 60px);
   --section-py:    clamp(80px, 8vw, 140px);
+
+  /* 8pt spacing scale — DS Part 1 §4 */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  16px;
+  --sp-4:  24px;
+  --sp-5:  32px;
+  --sp-6:  40px;
+  --sp-7:  48px;
+  --sp-8:  56px;
+  --sp-9:  64px;
+  --sp-10: 80px;
+  --sp-11: 96px;
+  --sp-12: 120px;
+  --sp-13: 160px;
 }
 
 html { font-size: 16px; scroll-behavior: smooth; }
+
+/* DS Part 1 §7.1 — Focus ring: 2px #8C52FF, 2px offset, keyboard only */
+:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+:focus:not(:focus-visible) { outline: none; }
 
 body {
   background: var(--bg);
@@ -84,9 +130,12 @@ ul { list-style: none; }
 .section-head .section-title { margin: 16px 0 20px; }
 
 /* ============ BUTTONS ============ */
+/* BTN-001 — DS Part 2 §A — min 44×44px touch target, sentence case labels */
 .btn {
   display: inline-flex; align-items: center; gap: 10px;
   padding: 14px 30px;
+  min-height: 44px;
+  min-width: 44px;
   border-radius: 8px;
   font-family: var(--font-head);
   font-size: 14.5px; font-weight: 600;
@@ -94,17 +143,28 @@ ul { list-style: none; }
   border: 1px solid transparent;
   transition: all 0.22s ease;
   white-space: nowrap;
+  text-transform: none; /* Sentence case — DS Part 1 §3.2 */
 }
-.btn-primary {
+/* BTN-001-primary — one per screen/section */
+.btn-primary, [data-component="BTN-001-primary"] {
   background: var(--purple);
   color: #fff;
   border-color: var(--purple);
 }
-.btn-primary:hover {
+.btn-primary:hover, [data-component="BTN-001-primary"]:hover {
   background: var(--purple-mid);
   border-color: var(--purple-mid);
   transform: translateY(-2px);
   box-shadow: 0 14px 40px var(--purple-glow);
+}
+/* BTN-001-secondary */
+[data-component="BTN-001-secondary"] {
+  background: var(--white);
+  color: #1A1A2E;
+  border-color: #1A1A2E;
+}
+[data-component="BTN-001-secondary"]:hover {
+  background: var(--off-white);
 }
 .btn-outline {
   background: transparent;
@@ -115,14 +175,15 @@ ul { list-style: none; }
   background: rgba(255,255,255,0.05);
   border-color: rgba(255,255,255,0.4);
 }
-.btn-ghost {
+/* BTN-001-ghost / tertiary */
+.btn-ghost, [data-component="BTN-001-ghost"] {
   background: transparent;
-  color: var(--grey-light);
-  border-color: var(--border);
+  color: var(--purple-light);
+  border-color: transparent;
 }
-.btn-ghost:hover {
+.btn-ghost:hover, [data-component="BTN-001-ghost"]:hover {
   color: var(--white);
-  border-color: rgba(255,255,255,0.18);
+  background: var(--purple-subtle);
 }
 .btn-white {
   background: #fff;
@@ -133,6 +194,17 @@ ul { list-style: none; }
   background: var(--off-white);
   transform: translateY(-2px);
   box-shadow: 0 16px 48px rgba(0,0,0,0.35);
+}
+
+/* BTN-001-destructive */
+[data-component="BTN-001-destructive"] {
+  background: var(--critical);
+  color: #fff;
+  border-color: var(--critical);
+}
+[data-component="BTN-001-destructive"]:hover {
+  background: #dc2626;
+  border-color: #dc2626;
 }
 .btn svg { width: 14px; height: 14px; flex-shrink: 0; }
 
@@ -169,12 +241,16 @@ ul { list-style: none; }
 .nav-links {
   display: flex; align-items: center; gap: 22px;
 }
+/* DS Part 1 §7.2 — nav links min touch height */
 .nav-links a {
   font-family: var(--font-head);
   font-size: 14px; font-weight: 500;
   color: rgba(255,255,255,0.55);
   transition: color 0.2s;
   position: relative;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 .nav-links a::after {
   content: '';
@@ -190,7 +266,8 @@ ul { list-style: none; }
 .nav-links a.active { color: var(--white); }
 .nav-right { display: flex; align-items: center; gap: 16px; }
 
-.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 6px; flex-direction: column; gap: 5px; }
+/* DS Part 1 §7.2 — 44×44px min touch target */
+.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 6px; flex-direction: column; gap: 5px; min-width: 44px; min-height: 44px; align-items: center; justify-content: center; }
 .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--white); border-radius: 2px; transition: all 0.3s; }
 
 /* Mobile menu */
@@ -918,6 +995,57 @@ ul { list-style: none; }
 @media (max-width: 400px) {
   .vmv-values-grid { grid-template-columns: 1fr; }
 }
+
+/* ============ STATUS BADGES — BADGE-001 DS Part 2 §B ============ */
+/* Rule: colour is NEVER the sole signal — always pair with label/icon */
+.badge {
+  display: inline-flex; align-items: center; gap: var(--sp-1);
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-family: var(--font-head);
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+.badge-success {
+  background: var(--success-tint);
+  color: var(--success);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+}
+.badge-warning {
+  background: var(--warning-tint);
+  color: var(--warning);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+.badge-critical {
+  background: var(--critical-tint);
+  color: var(--critical);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+.badge-info {
+  background: var(--info-tint);
+  color: var(--info);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+}
+.badge-neutral {
+  background: rgba(255,255,255,0.06);
+  color: var(--grey-light);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ALT-001 — Inline alert banners */
+.alert {
+  display: flex; align-items: flex-start; gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: 8px;
+  border-left: 3px solid;
+  font-size: 14px; line-height: 1.6;
+  margin-bottom: var(--sp-4);
+}
+.alert-critical  { background: var(--critical-tint); border-color: var(--critical);  color: var(--off-white); }
+.alert-warning   { background: var(--warning-tint);  border-color: var(--warning);   color: var(--off-white); }
+.alert-success   { background: var(--success-tint);  border-color: var(--success);   color: var(--off-white); }
+.alert-info      { background: var(--info-tint);     border-color: var(--info);      color: var(--off-white); }
 
 /* ============ RICH TEXT ============ */
 .prose h2 { font-family: var(--font-head); font-size: 28px; font-weight: 700; color: var(--white); margin: 40px 0 16px; }

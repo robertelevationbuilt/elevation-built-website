@@ -10,16 +10,14 @@
   <meta property="og:title" content="Elevation Built | Commercial Construction Adelaide" />
   <meta property="og:description" content="Adelaide's specialist commercial subcontractor — ceilings, partitions, carpentry, CFC cladding and batten systems for Tier 1 builders." />
   <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- DS Part 1 §3: Helvetica Neue — no external font dependency -->
   <link rel="stylesheet" href="css/style.css" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Elevation Built Pty Ltd","telephone":"+61452378954","email":"robert@elevationbuilt.com.au","url":"https://elevationbuilt.com.au","address":{"@type":"PostalAddress","addressLocality":"Adelaide","addressRegion":"SA","addressCountry":"AU"},"areaServed":[{"@type":"City","name":"Adelaide"},{"@type":"State","name":"South Australia"}],"description":"Adelaide commercial construction specialists — ceilings, partitions, carpentry, cladding and batten systems for Tier 1 builders.","identifier":{"@type":"PropertyValue","name":"ABN","value":"55 690 757 521"}}</script>
 </head>
 <body>
 
 <!-- ===== NAV ===== -->
-<nav class="nav" id="nav">
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
   <div class="container">
     <div class="nav-inner">
       <a href="./" class="nav-logo">
@@ -36,7 +34,7 @@
       </ul>
       <div class="nav-right">
         <a href="contact.html" class="btn btn-primary">Get a Quote</a>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -56,6 +54,7 @@
   <a href="contact.html" class="btn btn-primary" style="margin-top:8px;font-size:18px;" onclick="closeMobileMenu()">Get a Quote</a>
 </div>
 
+<main id="main-content">
 <!-- ===== HERO ===== -->
 <section class="hero">
   <div class="hero-bg"></div>
@@ -72,11 +71,11 @@
         We exist to be the most trusted commercial subcontractor in South Australia. Accountable people, proven systems, and work delivered the right way — for Adelaide's Tier 1 builders.
       </p>
       <div class="hero-actions">
-        <a href="services.html" class="btn btn-primary">
-          Our Services
+        <a href="services.html" class="btn btn-primary" data-component="BTN-001-primary">
+          Our services
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="contact.html" class="btn btn-ghost">Get in Touch</a>
+        <a href="contact.html" class="btn btn-ghost" data-component="BTN-001-ghost">Get in touch</a>
       </div>
       <div class="hero-stats">
         <div class="hero-stat">
@@ -382,8 +381,8 @@
         <p class="cta-sub">Tendering, in design, or ready to start — let's talk about what you need and how we can deliver it.</p>
       </div>
       <div class="cta-actions">
-        <a href="contact.html" class="btn btn-white">
-          Get in Touch
+        <a href="contact.html" class="btn btn-white" data-component="BTN-001-primary">
+          Get in touch
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
         <a href="tel:0452378954" class="btn btn-outline" style="border-color:rgba(255,255,255,0.25); color:#fff;">
@@ -395,8 +394,10 @@
   </div>
 </section>
 
+</main><!-- end #main-content -->
+
 <!-- ===== FOOTER ===== -->
-<footer class="footer">
+<footer class="footer" role="contentinfo">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
@@ -441,6 +442,7 @@
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">© 2026 Elevation Built Pty Ltd. All rights reserved.</p>
+      <!-- DS version: Full DS alignment v1.0 — July 2026 -->
       <span class="footer-abn">ABN 55 690 757 521 &nbsp;|&nbsp; Adelaide, SA</span>
     </div>
   </div>
@@ -461,6 +463,8 @@ hamburger.addEventListener('click', () => {
   menuOpen = !menuOpen;
   mobileMenu.classList.toggle('open', menuOpen);
   document.body.style.overflow = menuOpen ? 'hidden' : '';
+  hamburger.setAttribute('aria-expanded', menuOpen ? 'true' : 'false');
+  hamburger.setAttribute('aria-label', menuOpen ? 'Close navigation menu' : 'Open navigation menu');
 });
 function closeMobileMenu() {
   menuOpen = false;
