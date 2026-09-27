@@ -43,6 +43,7 @@
   --border-purple: rgba(140, 82, 255, 0.35);
 
   /* Typography — DS Part 1 §3: Helvetica Neue, no Google Fonts */
+  --font-title:    'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-head:     'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-body:     'Helvetica Neue', Helvetica, Arial, sans-serif;
 
@@ -85,6 +86,18 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Explicit title typography — prevents titles inheriting legacy display fonts. */
+h1, h2, h3, h4, h5, h6,
+.hero-title,
+.section-title,
+.page-hero-content h1,
+.service-name,
+.cta-title,
+.stat-big,
+.about-stat-num {
+  font-family: var(--font-title);
 }
 
 a { color: inherit; text-decoration: none; }
