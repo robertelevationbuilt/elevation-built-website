@@ -960,7 +960,7 @@ ul { list-style: none; }
   line-height: 1.75;
 }
 
-/* QATCO values block */
+/* BUILD values block */
 .vmv-values-wrap {
   background: var(--card);
   padding: clamp(36px, 4vw, 56px);
